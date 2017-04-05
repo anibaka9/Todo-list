@@ -1,0 +1,70 @@
+body {
+    background: rgba(10, 6, 6, 0.09);
+}
+
+div {
+    display: block;
+}
+
+.footer {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#todo-app {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    font-size: 24px;
+
+}
+
+#editer {
+    width: 100%;
+    padding: 7px;
+    font: italic;
+
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.list-element {
+    padding: 10px;
+}
+
+.todo-edit {
+    width: 100%;
+    padding: 7px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+#app-fotter {
+    font: 9px;
+}
+
+.editing form fieldset input.rec-check{
+  display: none;
+}
+
+.editing form fieldset label{
+  display: none;
+}
