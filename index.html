@@ -6,7 +6,9 @@
   	<link rel="stylesheet" type="text/css" href="style.css">
   	<title>Pure CSS Test</title>
 
-  	<<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css"
+      integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD"
+      crossorigin="anonymous">
 
   	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -14,8 +16,7 @@
 
   </head>
   <body>
-  <div class="pure-g">
-    <div class="pure-u-1" id="todo-app">
+    <div id="todo-app">
       <header class="header">
     	<h1>Todo-List</h1>
     	<div>
@@ -39,11 +40,21 @@
     	      </form>
       	    </div>
       	  </li>
+          <li>
+      	    <div class="list-element el-not-edit">
+      	      <form class="pure-form todo-edit-form">
+    	        <fieldset>
+      	          <input type="checkbox" class="rec-check" name="">
+      	          <label class="todo-item">O my goood</label>
+      	          <input class="todo-edit" type="text" placeholder="">
+    	        </fieldset>
+    	      </form>
+      	    </div>
+      	  </li>
       	</ul>
       	<footer id="app-fotter">N items left</footer>
       </section>
     </div>
-  </div>
     <div class="footer">
     	<p>Написан кем-то</p>
     </div>

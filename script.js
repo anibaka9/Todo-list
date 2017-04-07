@@ -5,7 +5,5 @@ $(document).ready(function() {
   $('.todo-item').dblclick(function () {
     $(this).parent().parent().parent().addClass('editing');
     $(this).parent().parent().parent().removeClass('el-not-edit');
-    $(this).siblings().
   })
-
 })

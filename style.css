@@ -45,12 +45,12 @@ ul {
 }
 
 .list-element {
-    padding: 10px;
+    padding: 13px 8px;
 }
 
 .todo-edit {
     width: 100%;
-    padding: 7px;
+    padding: 5px;
 }
 
 .checked {
@@ -75,4 +75,8 @@ ul {
 
 .editing form fieldset input.todo-edit{
   display: auto;
+}
+
+.editing {
+  padding: 0px 20px;
 }
