@@ -4,6 +4,8 @@ $(document).ready(function() {
   })
   $('.todo-item').dblclick(function () {
     $(this).parent().parent().parent().addClass('editing');
-    $(this).siblings('.todo-edit')[0].addClass('display');
+    $(this).parent().parent().parent().removeClass('el-not-edit');
+    $(this).siblings().
   })
+
 })
