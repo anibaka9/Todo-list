@@ -8,6 +8,8 @@ div {
 
 .footer {
     text-align: center;
+    font-style: italic;
+    color: #9b9da0;
 }
 
 .header {
@@ -58,7 +60,7 @@ ul {
 }
 
 #app-fotter {
-    font: 9px;
+    font-size: 0.7em;
 }
 
 .editing form fieldset input.rec-check{
