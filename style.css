@@ -53,6 +53,7 @@ ul {
 .todo-edit {
     width: 100%;
     padding: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 .checked {
@@ -84,5 +85,13 @@ ul {
 }
 
 .todo-item {
-    padding-left: 5px;
+    padding-left: 0px;
+}
+
+.del {
+  cursor: pointer;
+}
+
+.editing form fieldset .del{
+  display: none;
 }
