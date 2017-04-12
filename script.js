@@ -1,14 +1,31 @@
 $(document).ready(function() {
   var num_last = 0;
+
   $('#editer').keydown(function(e) {
   	if (e.keyCode == 13) {
         e.preventDefault();
-        var list_el = $('<li><div class="list-element el-not-edit"><form class="pure-form todo-edit-form"><fieldset><input type="checkbox" class="rec-check"><label class="todo-item">' + $(this).val() + '</label><input class="todo-edit" type="text">')
+        var list_el = $(
+          `<li>
+             <div class="list-element el-not-edit">
+                <form class="pure-form todo-edit-form">
+                   <fieldset>
+                   <input type="checkbox" class="rec-check">
+                   <label class="todo-item">` + $(this).val() + `</label>
+                   <input class="todo-edit" type="text">
+                   <a class="del">[X]</a>`)
         $('#Todo-List').append(list_el);
         $(this).val('')
         num_last += 1;
         $('#app-fotter').text(num_last + ' items left');
     };
+});
+
+$(document).on('click', '.del', function () {
+  if (!($(this).siblings('.rec-check').checked)) {
+    num_last -= 1;
+    $('#app-fotter').text(num_last + ' items left');
+  };
+  $(this).parent().parent().parent().remove();
 });
 
 $(document).on('click', '.rec-check', function () {
