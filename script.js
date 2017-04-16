@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var num_last = 0;
+  if (localStorage['data'] === undefined) {localStorage['data'] = ''};
   var data = localStorage['data'].split(',');
   var flag = '';
   if (data == '') {data = []};
@@ -22,7 +23,7 @@ $(document).ready(function() {
                    <a class="del">[X]</a>`));
 
   };
-  
+
   $('#editer').keydown(function(e) {
   	if (e.keyCode == 13) {
         e.preventDefault();
